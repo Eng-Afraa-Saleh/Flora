@@ -1,0 +1,72 @@
+
+/*Filter Section دمع العيييين*/
+.filter-section{
+    padding: 0 4rem;
+}
+
+/*Filter button بكره حياتي*/
+.filter-section .filter-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+.filter-section .filter-buttons .filter-btn {
+    position: relative;
+    padding: .5rem 1rem;
+    border: none;
+    background: var(--white);
+    cursor: pointer;
+    transition: var(--transition-tining);
+}
+
+.filter-section .filter-buttons .filter-btn.active{
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.filter-section .filter-buttons .filter-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2.2rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--blue);
+    transition:  0.5s ease-in-out;
+}
+
+.filter-section .filter-buttons .filter-btn:hover::after,
+.filter-section .filter-buttons .filter-btn.active::after {
+    width: 100%;
+}
+
+/*Responsive ريسبونسيف ولا نجحانوسيف هههه*/
+@media (max-width: 768px){
+    .filter-section{
+     padding:  1rem;
+    }
+}
+@media (max-width: 480px){
+    .filter-section{
+     padding: 1rem;
+    }
+    .filter-section .filter-buttons .filter-btn {
+        padding: 1rem;
+       
+    }
+
+    .filter-section .filter-buttons{
+        display: flex;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+     .filter-section{
+     padding: 1rem;
+    }
+}

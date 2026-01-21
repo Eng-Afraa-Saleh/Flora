@@ -1,0 +1,45 @@
+
+.room-card-content{
+    padding: 1rem;
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 8px #2222229c;
+    transition: transform 0.3s ease;
+}
+
+.room-card-content:hover{
+    transform: scale(1.05);
+
+}
+.room-card-content img{
+    width: 100%;
+}
+.room-card-info {
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.room-card-content .room-card-info .price {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+}
+.room-card-content .room-card-info h3{
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.room-card-content .room-card-info .location-info{
+    padding-top: 1rem;
+}
+.room-card-content .room-card-info .location-info span{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+.location-info span svg{
+    vertical-align: middle;
+    font-size: 18px;
+}
+

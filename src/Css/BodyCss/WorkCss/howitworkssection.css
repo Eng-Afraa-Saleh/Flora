@@ -1,0 +1,48 @@
+/*How It Works Section*/
+.how-it-works-section{
+    padding: 9rem 4rem 2rem 4rem;
+   
+}
+.works-card-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+ 
+}
+.works-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 768px){
+    .how-it-works-section{
+        padding:0 1rem;
+        margin-top: 8rem;
+    }
+    .works-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .works-card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .how-it-works-section{
+     padding: 9rem 1rem 2rem 1rem;
+   
+    }
+}

@@ -1,0 +1,71 @@
+
+/*Filter Card*/
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(387px, 1fr));
+    gap: 1rem;
+
+}
+
+.filter-card{
+    position: relative;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius-sm);
+    overflow:hidden ;
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: .2s;
+}
+
+.filter-card:hover{
+    transform: scale(1.02);
+}
+
+.filter-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.filter-card p{
+    padding: .5rem;
+    font-size: .9rem;
+
+}
+
+.details-content {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .5rem; 
+  
+}
+
+.showcase-badge{
+    top: 14px;
+    left: 14px;
+    font-size: 12px;
+    font-weight:500;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius-sm);
+    background: rgba(0, 0, 0, 0.315);
+    color: var(--white);
+    width: fit-content;
+}
+
+/*Responsive ريسبونسيف ولا ريسبوديليت هههه*/
+@media (max-width: 768px){
+    .cards-container{
+  
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px){
+    .cards-container{
+      grid-template-columns: repeat(1,1fr);
+    }
+}

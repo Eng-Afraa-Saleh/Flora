@@ -1,0 +1,162 @@
+
+/*Nav Bar*/
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  background: var(--light-blue);
+  padding: 0.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.6rem;
+  z-index: 1000;
+}
+
+
+.menu-desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-desktop ul.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-desktop ul.menu li {
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+}
+.menu-desktop ul.menu li a{
+  
+  color: var(--text-color);
+}
+
+.menu-desktop ul.menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: var(--blue);
+  transition: 0.5s ease-in-out;
+}
+
+.menu-desktop ul.menu li:hover::after {
+  width: 100%;
+}
+
+
+
+
+/* Burger Menu */
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger-menu .menu-icon svg,
+.burger-menu .close-icon svg {
+  width: 35px;
+  height: 35px;
+  color: var(--blue);
+  transition: all 0.3s ease;
+}
+
+.btn-mobile-menu{
+  display: none;
+}
+/*Responsive*/
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0 1rem;
+  }
+  .nav-bar.open-menu {
+   background: var(--white);
+   
+  }
+  .menu-desktop {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .menu-desktop.open {
+    max-height: 400px;
+  }
+
+  .menu-desktop ul.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .menu-desktop ul.menu {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menu-desktop ul.menu li {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--text-color-gray); 
+    border-top: 1px solid var(--text-color-gray);
+    text-align: left; 
+  } 
+
+  .menu-desktop ul.menu li a {
+    display: block;
+    width: 100%;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .button-content {
+    display: none;
+  }
+
+  .btn-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .btn-mobile-menu{
+    display: block;
+}
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .nav-bar {
+    padding: 0.6rem 1rem;
+
+  }
+  .btn-mobile-menu{
+  display: none;
+}
+}

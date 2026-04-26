@@ -73,5 +73,4 @@ git clone [https://github.com/Eng-Afraa-Saleh/flora.git](https://github.com/Eng-
 
 # 🌐 Deployment
 This project is configured to be deployed on GitHub Pages.
-To deploy a new version, simply run:
-(Add your deployment script instructions here, e.g., npm run deploy if using gh-pages package)
+> **[🚀 View Live Demo](#)** *(https://eng-afraa-saleh.github.io/Flora-website/)*

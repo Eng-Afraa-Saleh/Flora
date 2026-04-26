@@ -65,10 +65,11 @@ git clone [https://github.com/Eng-Afraa-Saleh/flora.git](https://github.com/Eng-
 
   
 
-  4. **Start the development server:**
-    ```bash
-    npm run dev
-    ```
+4. **Start the development server:**
+  ```bash
+  npm run dev
+  ```
+  
 
 # 🌐 Deployment
 This project is configured to be deployed on GitHub Pages.

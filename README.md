@@ -59,15 +59,18 @@ git clone [https://github.com/Eng-Afraa-Saleh/flora.git](https://github.com/Eng-
   ```
 
 3. **Install dependencies:**
-    ```bash
-    npm install
-    ```
-    4. **Start the development server:**
-      ```bash
-      npm run dev
-      ```
+  ```bash
+  npm install
+  ```
 
-      ## 🌐 Deployment
+  
+
+  4. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+# 🌐 Deployment
 This project is configured to be deployed on GitHub Pages.
 To deploy a new version, simply run:
 (Add your deployment script instructions here, e.g., npm run deploy if using gh-pages package)
